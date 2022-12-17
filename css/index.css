@@ -1,0 +1,472 @@
+/***********************************************************************************************/
+/* Web de Molex                                                                                */
+/* CSS del index                                                                               */
+/* Autor: Juan Manuel Lanza Pérez                                                              */
+/* Versión 1.0                                                                                 */
+/***********************************************************************************************/
+
+/************************ESTILO GENERAL/************************/
+@font-face {
+  font-family: titulos;
+  src: url("../fonts/Vollkorn_SC/VollkornSC-Bold.ttf");
+}
+@font-face {
+  font-family: subTitulos;
+  src: url("../fonts/Vollkorn_SC/VollkornSC-SemiBold.ttf");
+}
+
+@font-face {
+  font-family: texto;
+  src: url("../fonts/Vollkorn/Vollkorn-VariableFont_wght.ttf");
+}
+
+/*AJUSTES GENERALES*/
+body {
+  font-family: texto;
+  margin: 0;
+  padding: 0; /*QUITAR EL POR DEFECTO DEL NAVEGADOR*/
+  color: white;
+  height: 100%;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/************************HERO SECTION/************************/
+/*PONEMOS EL VIDEO A PANTALLA COMPLETA*/
+#video {
+  position: absolute;
+  height: 103%;
+  width: 100%;
+}
+
+#videoDiv {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  margin-bottom: 30px;
+}
+
+/*LE PONEMOS FUENTE AL TÍTULO Y LO ALINEAMOS COREECTAMENTE*/
+#video h1 {
+  font-family: titulos;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding-top: 12%;
+  font-size: 7rem;
+  opacity: 90%;
+  margin-bottom: -30px;
+}
+
+/*LO MISMO AL SUBTÍTULO*/
+#video h3 {
+  font-family: subTitulos;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  font-size: 1.5rem;
+  opacity: 90%;
+}
+
+/*LE DAMOS ESTILO A LA BARRA DE NAVEGACIÓN*/
+nav {
+  width: 100%;
+  height: 5%;
+  position: fixed;
+  top: 0px;
+  background-color: white;
+}
+
+.ul_navegacion {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.li_navegacion {
+  display: flex;
+  float: left;
+  margin: 10px;
+  font-family: subtitulos;
+}
+
+/*LE QUITAMOS LA DECORACION A LOS ENLACES DE LA BARRA Y LE PONEMOS EL COLOR QUE QUIERO*/
+.enlace_nav {
+  text-decoration: none;
+  color: rgb(5, 5, 5);
+}
+
+/*CUANDO PASAMOS EL RATÓN POR ENCIMA EL COLOR Y EL TAMAÑO DEL ENLACE CAMBIA*/
+.enlace_nav:hover {
+  color: rgb(58, 88, 58);
+  font-size: 17px;
+  transition: 0.3s;
+}
+
+/*LE DAMOS ESTILO A LA PARTE DE LOS RELOJES*/
+#wrapperRelojes {
+  background-color: rgb(255, 255, 255);
+  padding-top: 52%;
+  margin-bottom: 1.5%;
+}
+
+#wrapperRelojes h3 {
+  color: black;
+  text-decoration: underline;
+  padding-left: 5%;
+  font-family: subtitulos;
+}
+
+/*COLOCO LOS RELOJES EN UN GRID DE 4 COLUMNAS*/
+.grid4 {
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  padding-left: 5%;
+}
+
+/*AJUSTO EL TITULO DE LOS RELOJES*/
+.tituloRelojes {
+  position: absolute;
+  background-color: black;
+}
+
+/*LE DOY DISEÑO A LAS CARDS DE LOS RELOJES*/
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  width: 80%;
+  border-radius: 10%;
+  background: rgb(25, 25, 32);
+  background: radial-gradient(
+    circle,
+    rgba(25, 25, 32, 1) 0%,
+    rgba(160, 160, 163, 1) 6%,
+    rgba(233, 237, 237, 1) 100%
+  );
+  margin-bottom: 8%;
+}
+
+/*CUANDO PASAMOS EL RATÓN POR ENCIMA DE LAS CARDS LA IMAGEN AUMENTA Y SALE LA SOMBRA*/
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card img:hover {
+  transform: scale(1.3);
+  transition: 0.3s;
+}
+
+img {
+  border-radius: 5px 5px 0 0;
+}
+
+.container {
+  padding: 2px 16px;
+}
+
+/*PARA DARLE DISEÑO A LAS LETRAS DE LAS CARDS*/
+.container h4 {
+  color: black;
+  font-family: titulos;
+  margin-bottom: -10px;
+}
+
+.container p {
+  color: black;
+  font-family: texto;
+}
+
+/*LE DAMOS ESTILO A LA PARTE DE LA HISTORIA SOBRE LA EMPRESA*/
+.historia {
+  background: rgb(25, 25, 32);
+  background: radial-gradient(
+    circle,
+    rgba(25, 25, 32, 0.7987570028011204) 0%,
+    rgba(60, 60, 60, 0.8127626050420168) 6%,
+    rgba(65, 65, 65, 1) 100%
+  );
+  margin-bottom: -20%;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  padding-left: 3%;
+  padding-right: 3%;
+  height: 604.5px;
+  font-family: texto;
+  font-size: 18px;
+}
+
+.texto_historia h3 {
+  text-decoration: underline;
+  font-family: subtitulos;
+}
+
+.historia img {
+  height: 40%;
+  float: right;
+  padding-left: 272px;
+}
+
+.texto_historia {
+  padding-left: 10%;
+  padding-top: 5%;
+  margin-right: -130px;
+}
+
+/*DISEÑO DE LAS TENDENCIAS/OFERTAS*/
+#tendencias {
+  background-color: white;
+  height: 604.5px;
+  margin-top: 20%;
+  margin-bottom: -20%;
+}
+
+#tendencias h3 {
+  text-decoration: underline;
+  color: black;
+  font-family: titulos;
+  padding-left: 7%;
+  padding-top: 3%;
+}
+
+/*CREAMOS UN FOOTER CON LAS DISTINTAS SECCIONES*/
+footer {
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  margin-top: 20%;
+  background-color: rgba(0, 0, 0, 0.863);
+  height: 500px;
+  font-family: subtitulos;
+}
+
+.grid_footer {
+  padding-left: 13%;
+  padding-top: 10%;
+}
+
+.li_footer {
+  list-style: none;
+  padding-bottom: 3px;
+  margin-left: -30px;
+}
+
+/*ICONOS DE LOS ENLACES DEL FOOTER*/
+.fa-facebook-official {
+  padding-right: 5px;
+}
+
+.fa-instagram {
+  padding-right: 5px;
+}
+
+.fa-twitter-square {
+  padding-right: 5px;
+}
+
+.fa-youtube-play {
+  padding-right: 5px;
+}
+
+.fa-linkedin-square {
+  padding-right: 5px;
+}
+
+.fa-pinterest-square {
+  padding-right: 5px;
+}
+
+.enlace_footer {
+  text-decoration: none;
+  color: white;
+}
+
+/*EL HOVER DE LOS ENLACES DEL FOOTER*/
+.enlace_footer:hover {
+  color: rgb(58, 88, 58);
+  font-size: 17px;
+  transition: 0.3s;
+}
+
+/************************MEDIA QUERIES************************/
+/************************PARA TABLET************************/
+@media only screen and (width<=900px) {
+  /*AJUSTO EL VÍDEO PARA QUE SE VEA A PANTALLA COMPLETA*/
+  #video {
+    position: absolute;
+    width: 100%;
+    height: 1610px;
+    margin-top: -310px;
+  }
+
+  /*AJUSTO EL TEXTO DEL VÍDEO PARA QUE VUELVA AL CENTRO*/
+  #video h1 {
+    font-size: 7rem;
+    opacity: 90%;
+    padding-top: 700px;
+  }
+
+  /*LE PONGO UN PADDING A LOS RELOJES PARA QUE VUELVA AL SITIO QUE QUIERO*/
+  #wrapperRelojes {
+    padding-top: 1000px;
+  }
+
+  #wrapperRelojes1 {
+    margin-left: 30px;
+    margin-right: 5px;
+  }
+
+  #wrapperRelojes h3 {
+    margin-top: 300px;
+  }
+
+  /*LOS GRID LOS PASO A DOS COLUMNAS PARA QUE SE VEA MEJOR Y QUEPA*/
+  .grid4 {
+    grid-template-columns: 50% 50%;
+  }
+
+  /*LOS GRID DE HISTORIA LOS PASO A UNA COLUMNA PONIENDO EL TEXTO ENCIMA Y LA FOTO DEBAJO*/
+  .historia {
+    width: auto;
+    grid-template-columns: 100%;
+    padding-right: 3%;
+    height: 1012px;
+    font-family: texto;
+    font-size: 16.2px;
+  }
+
+  /*AJUSTO EL TEXTO DE LA HISTORIA PARA QUE QUEDE BIEN*/
+  .texto_historia {
+    padding-left: 7%;
+    padding-top: 5%;
+    padding-right: 23%;
+    margin-right: 0.5px;
+  }
+
+  /*AJUSTO LA IMAGEN Y SU POSICION*/
+  .historia img {
+    height: 30%;
+    float: left;
+    padding-left: 56px;
+  }
+  /*AJUSTO EL TAMAÑO DE LAS TENDENCIAS/OFERTAS PARA QUE SE VEA BIEN*/
+  #tendencias {
+    height: 1020px;
+    margin-left: 30px;
+    margin-right: 5px;
+    margin-bottom: -230px;
+  }
+
+  #tendencias h3 {
+    margin-top: 160px;
+  }
+
+  /*AJUSTO EL TAMÑANO DEL FOOTER*/
+  footer {
+    font-size: 14.3px;
+    height: 570px;
+  }
+
+  .grid_footer {
+    margin-right: -10%;
+  }
+}
+
+/************************PARA MÓVILES************************/
+@media only screen and (width<=600px) {
+  /*AJUSTO EL VÍDEO PARA QUE SE VEA A PANTALLA COMPLETA*/
+  #video {
+    position: absolute;
+    width: 110%;
+    height: 1040px;
+    margin-top: -310px;
+  }
+
+  /*AJUSTO EL TEXTO DEL VÍDEO PARA QUE VUELVA AL CENTRO*/
+  #video h1 {
+    font-size: 5rem;
+    opacity: 90%;
+    padding-top: 500px;
+    margin-left: -40px;
+  }
+
+  #video h3 {
+    font-size: 14px;
+    margin-left: -30px;
+  }
+
+  /*LE PONGO UN PADDING A LOS RELOJES PARA QUE VUELVA AL SITIO QUE QUIERO*/
+  #wrapperRelojes {
+    padding-top: 430px;
+  }
+
+  /*CONVIERTO LOS GRID EN UNA SOLA COLUMNA*/
+  .grid4 {
+    grid-template-columns: 100%;
+  }
+
+  /*COLO LOS RELOJES BIEN*/
+  #wrapperRelojes1 {
+    margin-left: 30px;
+    margin-right: -40px;
+  }
+
+  /*AJUSTO EL TÍTUTLO DE LOS RELOJES*/
+  #wrapperRelojes h3 {
+    margin-left: 40px;
+  }
+
+  /*AJUSTO EL TAMAÑANO DE LA HISTORIA*/
+  .historia {
+    width: 110%;
+    grid-template-columns: 100%;
+    padding-right: 3%;
+    height: 1325px;
+  }
+
+  /*AJUSTO EL TEXTO DE LA HISTORIA PARA QUE QUEDE BIEN*/
+  .texto_historia {
+    padding-left: 50px;
+    padding-top: 5%;
+    padding-right: 23%;
+    margin-right: -30px;
+  }
+
+  /*AJUSTO LA IMAGEN Y SU POSICION*/
+  .historia img {
+    height: 30%;
+    float: left;
+    padding-left: 50px;
+  }
+
+  /*AJUSTO EL TAMAÑO DE LAS TENDENCIAS/OFERTAS PARA QUE SE VEA BIEN*/
+  #tendencias {
+    height: 2060px;
+    margin-left: 30px;
+    margin-right: -30px;
+    margin-bottom: -290px;
+  }
+
+  /*AJUSTO EL TÍTULO DE LAS TENDENCIAS/OFERTAS*/
+  #tendencias h3 {
+    margin-top: 110px;
+  }
+
+  /*AJUSTO EL TAMÑANO DEL FOOTER*/
+  footer {
+    height: 1200px;
+    width: 110%;
+    grid-template-columns: 100%;
+  }
+
+  /*APLICO MARGEN AL GRID PARA AJUSTARLO*/
+  .grid_footer {
+    margin-left: 30px;
+  }
+}
