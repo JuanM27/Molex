@@ -457,7 +457,8 @@ footer {
     width: 103.55%;
     grid-template-columns: 100%;
     padding-right: 3%;
-    height: 2400px;
+    height: 2200px;
+    word-wrap: break-word;
   }
   .historia h3 {
     width: 100%;
@@ -474,7 +475,7 @@ footer {
 
   /*AJUSTO LA IMAGEN Y SU POSICION*/
   .historia img {
-    height: 30%;
+    height: 25%;
     float: left;
     padding-left: 50px;
   }
