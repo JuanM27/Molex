@@ -454,7 +454,7 @@ footer {
 
   /*AJUSTO EL TAMAÑANO DE LA HISTORIA*/
   .historia {
-    width: 100%;
+    width: 103.55%;
     grid-template-columns: 100%;
     padding-right: 3%;
     height: 2400px;
@@ -500,7 +500,7 @@ footer {
   /*AJUSTO EL TAMÑANO DEL FOOTER*/
   footer {
     height: 3000px;
-    width: 100%;
+    width: 103.55%;
     grid-template-columns: 100%;
   }
 
