@@ -354,7 +354,7 @@ footer {
     grid-template-columns: 100%;
     padding-right: 3%;
     padding-left: 8%;
-    height: 1080px;
+    height: 1120px;
     font-family: texto;
     font-size: 16.2px;
   }
@@ -428,7 +428,7 @@ footer {
   /*CONVIERTO LOS GRID EN UNA SOLA COLUMNA*/
   .grid4 {
     grid-template-columns: 100%;
-    width: 80%;
+    width: 100%;
   }
 
   /*COLO LOS RELOJES BIEN*/
@@ -449,7 +449,7 @@ footer {
   }
 
   #wrapperRelojes1.grid4 {
-    width: 90%;
+    width: 100%;
   }
 
   /*AJUSTO EL TAMAÑANO DE LA HISTORIA*/
@@ -457,7 +457,7 @@ footer {
     width: 100%;
     grid-template-columns: 100%;
     padding-right: 3%;
-    height: 1800px;
+    height: 2400px;
   }
   .historia h3 {
     width: 100%;
