@@ -403,7 +403,7 @@ footer {
   /*AJUSTO EL VÍDEO PARA QUE SE VEA A PANTALLA COMPLETA*/
   #video {
     position: absolute;
-    width: 108%;
+    width: 108.3%;
     height: 1040px;
     margin-top: -310px;
   }
@@ -454,7 +454,7 @@ footer {
 
   /*AJUSTO EL TAMAÑANO DE LA HISTORIA*/
   .historia {
-    width: 108%;
+    width: 108.3%;
     grid-template-columns: 100%;
     padding-right: 3%;
     height: 2400px;
@@ -501,7 +501,7 @@ footer {
   /*AJUSTO EL TAMÑANO DEL FOOTER*/
   footer {
     height: 3000px;
-    width: 108%;
+    width: 108.3%;
     grid-template-columns: 100%;
   }
 
