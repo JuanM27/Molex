@@ -77,6 +77,9 @@ html {
 }
 
 /*LE DAMOS ESTILO A LA BARRA DE NAVEGACIÓN*/
+nav {
+  z-index: 1;
+}
 .topnav {
   overflow: hidden;
   background-color: #333;
@@ -305,11 +308,14 @@ footer {
 /************************MEDIA QUERIES************************/
 /************************PARA TABLET************************/
 @media only screen and (width<=900px) {
+  nav {
+    width: 100%;
+  }
   /*AJUSTO EL VÍDEO PARA QUE SE VEA A PANTALLA COMPLETA*/
   #video {
     position: absolute;
-    width: 100%;
-    height: 1610px;
+    width: 103.55%;
+    height: 1250px;
     margin-top: -310px;
   }
 
@@ -317,12 +323,13 @@ footer {
   #video h1 {
     font-size: 7rem;
     opacity: 90%;
-    padding-top: 700px;
+    padding-top: 60%;
   }
 
   /*LE PONGO UN PADDING A LOS RELOJES PARA QUE VUELVA AL SITIO QUE QUIERO*/
   #wrapperRelojes {
-    padding-top: 1000px;
+    padding-top: 660px;
+    width: 100%;
   }
 
   #wrapperRelojes1 {
@@ -332,18 +339,21 @@ footer {
 
   #wrapperRelojes h3 {
     margin-top: 300px;
+    padding-left: 10%;
   }
 
   /*LOS GRID LOS PASO A DOS COLUMNAS PARA QUE SE VEA MEJOR Y QUEPA*/
   .grid4 {
     grid-template-columns: 50% 50%;
+    width: 100%;
   }
 
   /*LOS GRID DE HISTORIA LOS PASO A UNA COLUMNA PONIENDO EL TEXTO ENCIMA Y LA FOTO DEBAJO*/
   .historia {
-    width: auto;
+    width: 103.55%;
     grid-template-columns: 100%;
     padding-right: 3%;
+    padding-left: 8%;
     height: 1012px;
     font-family: texto;
     font-size: 16.2px;
@@ -377,12 +387,14 @@ footer {
 
   /*AJUSTO EL TAMÑANO DEL FOOTER*/
   footer {
+    width: 103.55%;
     font-size: 14.3px;
-    height: 570px;
+    height: 1200px;
   }
 
   .grid_footer {
     margin-right: -10%;
+    width: 100%;
   }
 }
 
@@ -391,7 +403,7 @@ footer {
   /*AJUSTO EL VÍDEO PARA QUE SE VEA A PANTALLA COMPLETA*/
   #video {
     position: absolute;
-    width: 110%;
+    width: 100%;
     height: 1040px;
     margin-top: -310px;
   }
@@ -401,41 +413,54 @@ footer {
     font-size: 5rem;
     opacity: 90%;
     padding-top: 500px;
-    margin-left: -40px;
   }
 
   #video h3 {
     font-size: 14px;
-    margin-left: -30px;
   }
 
   /*LE PONGO UN PADDING A LOS RELOJES PARA QUE VUELVA AL SITIO QUE QUIERO*/
   #wrapperRelojes {
     padding-top: 430px;
+    width: 100%;
   }
 
   /*CONVIERTO LOS GRID EN UNA SOLA COLUMNA*/
   .grid4 {
     grid-template-columns: 100%;
+    width: 80%;
   }
 
   /*COLO LOS RELOJES BIEN*/
   #wrapperRelojes1 {
     margin-left: 30px;
     margin-right: -40px;
+    width: 100%;
   }
 
   /*AJUSTO EL TÍTUTLO DE LOS RELOJES*/
   #wrapperRelojes h3 {
-    margin-left: 40px;
+    margin-left: 17%;
+  }
+
+  #wrapperRelojes1.grid4 {
+    width: 100%;
+    padding-left: 13%;
+  }
+
+  #wrapperRelojes1.grid4 {
+    width: 90%;
   }
 
   /*AJUSTO EL TAMAÑANO DE LA HISTORIA*/
   .historia {
-    width: 150%;
+    width: 100%;
     grid-template-columns: 100%;
     padding-right: 3%;
-    height: 1312px;
+    height: 2030px;
+  }
+  .historia h3 {
+    width: 100%;
   }
 
   /*AJUSTO EL TEXTO DE LA HISTORIA PARA QUE QUEDE BIEN*/
@@ -444,6 +469,7 @@ footer {
     padding-top: 5%;
     padding-right: 43%;
     margin-right: -30px;
+    width: 100%;
   }
 
   /*AJUSTO LA IMAGEN Y SU POSICION*/
@@ -455,28 +481,33 @@ footer {
 
   /*AJUSTO EL TAMAÑO DE LAS TENDENCIAS/OFERTAS PARA QUE SE VEA BIEN*/
   #tendencias {
-    height: 2060px;
+    height: 1800px;
     margin-left: 30px;
     margin-right: -30px;
     margin-bottom: -290px;
+    width: 90%;
   }
-
+  #tendenciasGrid.grid4 {
+    width: 100%;
+    padding-left: 15%;
+  }
   /*AJUSTO EL TÍTULO DE LAS TENDENCIAS/OFERTAS*/
   #tendencias h3 {
     margin-top: 110px;
+    margin-left: 10%;
   }
 
   /*AJUSTO EL TAMÑANO DEL FOOTER*/
   footer {
     height: 3000px;
-    width: 110%;
+    width: 100%;
     grid-template-columns: 100%;
   }
 
   /*APLICO MARGEN AL GRID PARA AJUSTARLO*/
   .grid_footer {
     margin-left: 30px;
-    margin-bottom: 3000px;
+    width: 80%;
   }
 
   .topnav .icon {
@@ -487,7 +518,7 @@ footer {
 /*MEDIAQUERIES PARA MOVILES Y SOLO PARA LA BARRA DE NAVEGACION*/
 @media screen and (max-width: 600px) {
   .topnav {
-    width: 420px;
+    width: 100%;
   }
   .topnav a:not(:first-child) {
     display: none;
